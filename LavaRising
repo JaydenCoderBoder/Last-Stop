@@ -1,0 +1,24 @@
+public class LavaRising : MonoBehavior
+{
+  public Transform lava;
+  public float riseSpeed = 1f;
+  public float maxHeight 10f;
+
+  private bool isRising = false;
+
+  void OnTriggerEnter(Collider other)
+  {
+    if (other.CompareTag("Player"))
+    {
+    isRising = true;
+    }
+  }
+
+  void Update()
+  {
+    if (isRising && lava.position.y < maxHeight)
+    {
+      lava.position += Vector3.up * riseSpeed * Time.deltaTime;
+    }
+  }
+}
