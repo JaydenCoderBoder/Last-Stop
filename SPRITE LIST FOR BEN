@@ -1,7 +1,10 @@
 LIST OF SPRITES NEEDED:
 (do in order as it is)
 -background of train
+-bullet
 -lava
+-targets(like the ones getting shot)
 -rat enemies
--circle spike(ask me if you have no idea what that is)
+-jump animation(if u can)
+-spikes(don't do yet)
 -rat king boss(not needed yet)
